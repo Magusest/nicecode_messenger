@@ -1,7 +1,9 @@
+import SearchBar from "../../searchBar/searchBar";
+
 export default function UsersSection() {
     return(
         <>
-            <div>Search</div>
+            <SearchBar />
             <div>usersList</div>
         </>
     )

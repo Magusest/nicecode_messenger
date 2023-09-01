@@ -1,0 +1,70 @@
+.searchBar {
+    position: relative;
+    padding: 14px 12px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: -1px 7px 20px 0px rgba(34, 60, 80, 0.25);
+
+    input {
+        box-sizing: border-box;
+        width: 298px;
+        padding: 12px 36px;
+        border: 1px solid #ffffff;;
+        border-radius: 20px;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid #cdcdcd;
+            outline: none;
+
+            & + .loupeIcon {
+                background-color: #ffffff;
+            }
+
+            & ~ .sortIcon {
+                display: none;
+            }   
+            
+            & ~ .crossIcon {
+                transform: rotate(45deg);
+            }    
+        }
+    }
+
+    .icon {
+        width: 34px;
+        height: 34px;
+        background-color: #F1F2F3;
+        position: absolute;
+        top: 18px;
+        border-radius: 50%;
+        transition: 0.5s;
+        border: none;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+
+    .loupeIcon {
+        left: 13px;
+
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+
+    .sortIcon {
+        right: 58px;
+    }
+
+    .crossIcon {
+        right: 14px;
+    }
+}
