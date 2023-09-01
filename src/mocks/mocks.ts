@@ -5,7 +5,7 @@ const usersData: UserDataType[] = [
     {
         id: 1,
         name: 'Рожков Денис Петрович',
-        photo: '',
+        photo: '../assets/userPhoto/rojkov.png',
         sex: 'муж',
         age: 30,
         notices: [
@@ -69,7 +69,7 @@ const usersData: UserDataType[] = [
     {
         id: 2,
         name: 'Кравцова Александра Егоровна', 
-        photo: '',
+        photo: '../assets/userPhoto/kravcova.png',
         sex: 'жен',
         age: 30,
         notices: [
@@ -133,7 +133,7 @@ const usersData: UserDataType[] = [
     {
         id: 3,
         name: 'Диброва Алевтина Алевтиновна',
-        photo: '',
+        photo: '../assets/userPhoto/dibrova.png',
         sex: 'жен',
         age: 30,
         notices: [
@@ -197,7 +197,7 @@ const usersData: UserDataType[] = [
     {
         id: 4,
         name: 'Иванов Дмитрий Сидорович',
-        photo: '',
+        photo: '../assets/userPhoto/ivanov.png',
         sex: 'муж',
         age: 30,
         notices: [
@@ -261,7 +261,7 @@ const usersData: UserDataType[] = [
     {
         id: 5,
         name: 'Форс Александр Ипалитович',
-        photo: '',
+        photo: '../assets/userPhoto/fors.png',
         sex: 'муж',
         age: 30,
         notices: [
@@ -325,7 +325,7 @@ const usersData: UserDataType[] = [
     {
         id: 6,
         name: 'Ахмедов Артур Ланцелотович',
-        photo: '',
+        photo: '../assets/userPhoto/ahmedov.png',
         sex: 'муж',
         age: 30,
         notices: [
@@ -389,7 +389,7 @@ const usersData: UserDataType[] = [
     {
         id: 7,
         name: 'Валиева Руфина Аидовна',
-        photo: '',
+        photo: '../assets/userPhoto/valieva.png',
         sex: 'жен',
         age: 30,
         notices: [
@@ -453,7 +453,7 @@ const usersData: UserDataType[] = [
     {
         id: 8,
         name: 'Волошина Виктория Викторовна',
-        photo: '',
+        photo: '../assets/userPhoto/voloshina.png',
         sex: 'муж',
         age: 30,
         notices: [
@@ -517,7 +517,7 @@ const usersData: UserDataType[] = [
     {
         id: 9,
         name: 'nosikov@list.ru',
-        photo: '',
+        photo: '../assets/userPhoto/nosikov.png',
         sex: 'муж',
         age: 30,
         notices: [

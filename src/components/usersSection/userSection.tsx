@@ -1,4 +1,4 @@
-import SearchBar from "../../searchBar/searchBar";
+import SearchBar from "../searchBar/searchBar";
 
 export default function UsersSection() {
     return(
