@@ -1,0 +1,18 @@
+.main {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 366px 1fr;
+    margin: 0 auto;
+    padding-top: 26px;
+
+
+    .users {
+        background-color: aqua;
+        height: 100px;
+    }
+
+    .userInfo {
+        background-color: aquamarine;
+        height: 100px;
+    }
+}
