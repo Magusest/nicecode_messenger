@@ -1,10 +1,16 @@
+import { UserDataType } from "../../types/userDataType";
 import SearchBar from "../searchBar/searchBar";
+import Users from "../users/users";
 
-export default function UsersSection() {
+type Props = {
+    users: UserDataType[];
+}
+
+export default function UsersSection({users}: Props) {
     return(
         <>
             <SearchBar />
-            <div>usersList</div>
+            <Users users={users}/>
         </>
     )
 }

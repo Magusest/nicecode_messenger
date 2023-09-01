@@ -1,0 +1,94 @@
+.control {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 6px;
+
+    .counter {
+        display: flex;
+        width: 28px;
+        height: 18px;
+        background-color: #616f82;
+        border-radius: 12px;
+        justify-content: center;
+        align-content: center;
+
+        p {
+            margin: auto 0;
+            font-size: 12px;
+            color: #ffffff;
+        }
+    }
+
+    .button {
+        background-color: transparent;
+        border: none;;
+        font-size: 14px;
+        color: #616f82;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: #000000;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.activeControl {
+    .counterSection {
+        display: flex;
+        gap: 6px;
+        padding-left: 20px;
+
+        .counter {
+            background-color: #4198c5;  
+        }
+    }
+}
+
+.usersList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.userItem {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 6px;
+
+    h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #161718
+    }
+
+    img {
+        order: -1;
+    }
+
+    &:hover {
+        background-color: #f1f2f4;
+    }
+}
+
+.activeUserItem {
+    position: relative;
+    padding-left: 40px;
+
+    label {
+        top: -8px;
+        left: -60px;
+    }
+}

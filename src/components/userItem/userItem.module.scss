@@ -1,0 +1,36 @@
+.userItem {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 6px;
+
+    h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #161718
+    }
+
+    img {
+        order: -1;
+    }
+
+    &:hover {
+        background-color: #f1f2f4;
+    }
+}
+
+.activeUserItem {
+    position: relative;
+    padding-left: 40px;
+
+    label {
+        top: -8px;
+        left: -60px;
+    }
+}
