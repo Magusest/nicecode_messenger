@@ -1,0 +1,88 @@
+.patientInfo {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px 0px rgba(30, 30, 30, 0.10);
+    padding: 10px;
+
+    .persanalData {
+        display: flex;
+        gap: 14px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            color: #161718;
+            margin: 0;
+        }
+
+        img {
+            order: -1;
+        }
+    }
+
+    button {
+        position: relative;
+        width: 34px;
+        height: 34px;
+        margin: 0 0 auto auto;
+        border: none;
+        border-radius: 50px;
+        background-color: #ffffff;
+        cursor: pointer;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            background-color: #4198c5;
+        }
+    }
+
+    .dropDown {
+        position: absolute;
+        top: 36px;
+        right: 26px;
+        width: 230px;
+        height: 88px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 4px;
+
+        button {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            text-align: left;
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: #f1f2f3;
+            }
+        }
+
+    }
+}
+
