@@ -20,7 +20,7 @@ export default function Users({users}: Props) {
                         <CustomCheckbox />
                         <button className={styles.button}>Все</button>
                         <div className={styles.counter}>
-                            <p>200</p>
+                            <p>{users.length}</p>
                         </div>
                     </div>
                     <div className={styles.buttonSection}>
@@ -38,7 +38,7 @@ export default function Users({users}: Props) {
         <>
             <div className={styles.control}>
                 <div className={styles.counter}>
-                    <p>200</p>
+                    <p>{users.length}</p>
                 </div>
                 <button className={styles.button} onClick={()=> setISUpdate(false)}>Выбрать</button>
             </div>

@@ -1,0 +1,54 @@
+.patientCardControl {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 14px 10px;
+
+    ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        position: relative;
+
+        &:not(:last-child):after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 18px;
+            background-color: #cdcdcd;
+            right: -20px;
+        }
+    }
+
+    button {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: #616f82;
+        background-color: transparent;
+        border: none;
+        transition: 0.5s;
+        cursor: pointer;
+     
+        &:hover {
+            color: #000000;
+            transform: translateY(-3px);
+        }
+    }
+
+    .addButton {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            border-radius: 50%;
+            border: 1px solid #616f82;
+            padding: 6px;
+        }
+    }
+}
