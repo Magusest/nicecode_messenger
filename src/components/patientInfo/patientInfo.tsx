@@ -20,7 +20,7 @@ export default function PatientInfo({patient}: Props) {
                 <img src={photo} width={90} height={90} alt={`Фото поциента ${name}`} />
             </div>
             <button onClick={() => setIsOpenMenu(true)}>
-                <img  src="../assets/icons/dots.svg" width={20} height={4} alt="иконка с крестом" />
+                <img  src="../assets/icons/dots.svg" width={20} height={4} alt="иконка с точками" />
             </button>
             {isOpenMenu 
                 ? 

@@ -1,0 +1,44 @@
+.event {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+
+    h3,
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #161718;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .features {
+        display: flex;
+        gap: 14px;
+        margin-top: 10px;
+
+        div {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+    }
+
+    img {
+        order: -1;
+        border-radius: 4px;
+    }
+
+    &:hover {
+        border-color: #4198c5;
+    }
+}

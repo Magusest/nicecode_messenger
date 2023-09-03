@@ -1,0 +1,57 @@
+.consultation {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+
+    h3 {
+        margin: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: #161718;
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #616f82;
+    }
+
+    .imageContainer {
+        position: relative;
+        order: -1;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f1f2f3;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &:hover {
+        border-color: #4198c5;
+
+        .imageContainer {
+            background-color: #4198c5;
+        }
+    }
+
+    .status {
+        margin-left: auto;
+        margin-top: auto;
+        p {
+            color: #ff0000;
+            font-size: 14px;
+        }
+    }
+}

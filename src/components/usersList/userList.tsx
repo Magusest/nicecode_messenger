@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import { UserDataType } from '../../types/userDataType';
-import CustomCheckbox from '../customCheckbox/customCheckbox';
-import UsersList from '../usersList/usersList';
-// import UserListControl from '../userListControl/userListControl';
-import styles from './users.module.scss'
+import { useState } from "react";
+import { UserDataType } from "../../types/userDataType";
+import CustomCheckbox from "../customCheckbox/customCheckbox";
+import UserItem from "../userItem/userItem";
+import styles from './usersList.module.scss'
+
 
 type Props = {
     users: UserDataType[];
+    currentId: number;
+    changeUserCard: (id: number) => void;
 }
 
-export default function Users({users}: Props) {
+export default function UsersList({users, currentId, changeUserCard}: Props) {
     const [isUpdate, setISUpdate] = useState(true);
 
     if (!isUpdate) {
@@ -28,7 +30,13 @@ export default function Users({users}: Props) {
                         <button className={styles.button} onClick={()=> setISUpdate(true)}>Отмена</button>
                     </div>
                 </div>
-                <UsersList isUpdate={isUpdate} users={users} />
+                <ul className={styles.usersList}>
+                    {users.map((user) => (
+                        <li>
+                            <UserItem isUpdate={isUpdate} user={user} currentId={currentId} changeUserId={changeUserCard}/>
+                        </li>            
+                    ))}
+                </ul>
             </>
         
         )
@@ -42,7 +50,13 @@ export default function Users({users}: Props) {
                 </div>
                 <button className={styles.button} onClick={()=> setISUpdate(false)}>Выбрать</button>
             </div>
-            <UsersList isUpdate={isUpdate} users={users}/>
+            <ul className={styles.usersList}>
+                    {users.map((user) => (
+                        <li>
+                            <UserItem isUpdate={isUpdate} user={user} currentId={currentId} changeUserId={changeUserCard}/>
+                        </li>            
+                    ))}
+                </ul>
         </>
     )
-}
+} 

@@ -1,0 +1,44 @@
+.video {
+   display: flex;
+   gap: 10px;
+   background-color: #ffffff; 
+   padding: 10px;
+   border: 1px solid #cdcdcd;
+
+   h3, 
+   p {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+   }
+
+   div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+    }
+   }
+
+   h3 {
+    color: #161718
+   }
+
+   p {
+    color: #616F82;
+    margin-top: auto;
+    margin-left: auto;
+   }
+
+   img {
+    order: -1;
+   }
+
+   &:hover {
+    border-color: #4198c5;
+   }
+}

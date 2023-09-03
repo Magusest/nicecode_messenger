@@ -1,21 +1,29 @@
 import styles from './main.module.scss';
-import UsersSection from '../usersSection/userSection';
-import { UserDataType } from '../../types/userDataType';
+import { userArray } from '../../mocks/mocks';
 import PatientCard from '../patientCard/patientCard';
+import SearchBar from "../searchBar/searchBar";
+import { useState } from 'react';
+import UsersList from '../usersList/userList';
 
-type Props = {
-    user: UserDataType;
-    users: UserDataType[];
-}
+export default function Main() {
+    const [currentId, setCurrentId] = useState(userArray[0].id);
+    const activeUser = userArray.find((user) => user.id === currentId)
+    
+    const changeUserCard = (id: typeof currentId) => {
+        setCurrentId(id)
+    }
 
-export default function Main({user, users}: Props) {
     return(
         <main className={styles.main}>            
             <section className={styles.users}>
-                <UsersSection users={users}/>
+                <SearchBar />
+                <UsersList users={userArray} currentId={currentId} changeUserCard={changeUserCard}/>
             </section>
             <section className={styles.userCard}>
-                <PatientCard user={user}/>
+                {activeUser 
+                    ? <PatientCard user={activeUser}/>
+                    : null
+                }
             </section>
         </main>
     )
