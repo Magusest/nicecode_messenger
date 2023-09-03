@@ -31,8 +31,8 @@ export default function UsersList({users, currentId, changeUserCard}: Props) {
                     </div>
                 </div>
                 <ul className={styles.usersList}>
-                    {users.map((user) => (
-                        <li>
+                    {users.map((user, index) => (
+                        <li key={`${user.id}-${index}`}>
                             <UserItem isUpdate={isUpdate} user={user} currentId={currentId} changeUserId={changeUserCard}/>
                         </li>            
                     ))}
@@ -51,8 +51,8 @@ export default function UsersList({users, currentId, changeUserCard}: Props) {
                 <button className={styles.button} onClick={()=> setISUpdate(false)}>Выбрать</button>
             </div>
             <ul className={styles.usersList}>
-                    {users.map((user) => (
-                        <li>
+                    {users.map((user, index) => (
+                        <li key={`${user.id}-${index}`}>
                             <UserItem isUpdate={isUpdate} user={user} currentId={currentId} changeUserId={changeUserCard}/>
                         </li>            
                     ))}
