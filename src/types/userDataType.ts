@@ -13,4 +13,5 @@ export type UserDataType = {
     consultations: ConsultationType[];
     videos: VideoType[];
     events: EventType[];
+    isNewSessions: boolean;
 }

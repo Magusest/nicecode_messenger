@@ -85,8 +85,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: false,
     },
     {
         id: 2,
@@ -171,8 +171,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: true,
     },
     {
         id: 3,
@@ -257,8 +257,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: false,
     },
     {
         id: 4,
@@ -343,8 +343,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: false,
     },
     {
         id: 5,
@@ -429,8 +429,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: false,
     },
     {
         id: 6,
@@ -515,8 +515,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: false,
     },
     {
         id: 7,
@@ -601,8 +601,8 @@ const usersData: UserDataType[] = [
                 time: '17:00',
                 previewImage: '../assets/events/event.png',            
             },
-
         ],
+        isNewSessions: false,
     },
     {
         id: 8,
@@ -689,6 +689,7 @@ const usersData: UserDataType[] = [
             },
 
         ],
+        isNewSessions: false,
     },
     {
         id: 9,
@@ -775,6 +776,7 @@ const usersData: UserDataType[] = [
             },
 
         ],
+        isNewSessions: false,
     },
 ]
 

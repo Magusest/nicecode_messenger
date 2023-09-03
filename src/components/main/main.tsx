@@ -3,11 +3,11 @@ import { userArray } from '../../mocks/mocks';
 import PatientCard from '../patientCard/patientCard';
 import SearchBar from "../searchBar/searchBar";
 import { useState } from 'react';
-import UsersList from '../usersList/userList';
+import PatientList from '../patientsList/patientList';
 
 export default function Main() {
     const [currentId, setCurrentId] = useState(userArray[0].id);
-    const activeUser = userArray.find((user) => user.id === currentId)
+    const activePatient = userArray.find((user) => user.id === currentId)
     
     const changeUserCard = (id: typeof currentId) => {
         setCurrentId(id)
@@ -15,13 +15,13 @@ export default function Main() {
 
     return(
         <main className={styles.main}>            
-            <section className={styles.users}>
+            <section className={styles.patients}>
                 <SearchBar />
-                <UsersList users={userArray} currentId={currentId} changeUserCard={changeUserCard}/>
+                <PatientList patients={userArray} currentId={currentId} changeUserCard={changeUserCard}/>
             </section>
             <section className={styles.userCard}>
-                {activeUser 
-                    ? <PatientCard user={activeUser}/>
+                {activePatient 
+                    ? <PatientCard user={activePatient}/>
                     : null
                 }
             </section>
