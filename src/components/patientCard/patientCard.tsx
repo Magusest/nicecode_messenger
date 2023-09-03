@@ -16,7 +16,7 @@ type Props = {
 export default function PatientCard({user}: Props) {
     const {notices, consultations, videos, events} = user;
 
-    const [currentControl, setCurrentControl] = useState('events')
+    const [currentControl, setCurrentControl] = useState('notices')
 
     const changeCardControl = (control: typeof currentControl) => {
         setCurrentControl(control)
