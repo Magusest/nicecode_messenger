@@ -4,7 +4,7 @@ import { noticeType } from "./noticeType";
 import { VideoType } from "./videoType";
 
 export type UserDataType = {
-    id: number;
+    id: string;
     name: string;
     photo: string;
     sex: string;

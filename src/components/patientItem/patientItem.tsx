@@ -6,8 +6,8 @@ import styles from './patientItem.module.scss'
 type Props = {
     isUpdate: boolean;
     patient: UserDataType;
-    currentId: number;
-    changeUserId: (id: number) => void;
+    currentId: string;
+    changeUserId: (id: string) => void;
 }
 
 export default function PatientItem({isUpdate, patient, currentId, changeUserId}: Props) {

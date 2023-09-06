@@ -3,7 +3,7 @@ import { getArray } from "../utils/utils";
 
 const usersData: UserDataType[] = [
     {
-        id: 1,
+        id: '',
         name: 'Рожков Денис Петрович',
         photo: '../assets/userPhoto/rojkov.png',
         sex: 'муж',
@@ -89,7 +89,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 2,
+        id: '',
         name: 'Кравцова Александра Егоровна', 
         photo: '../assets/userPhoto/kravcova.png',
         sex: 'жен',
@@ -175,7 +175,7 @@ const usersData: UserDataType[] = [
         isNewSessions: true,
     },
     {
-        id: 3,
+        id:'',
         name: 'Диброва Алевтина Алевтиновна',
         photo: '../assets/userPhoto/dibrova.png',
         sex: 'жен',
@@ -261,7 +261,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 4,
+        id: '',
         name: 'Иванов Дмитрий Сидорович',
         photo: '../assets/userPhoto/ivanov.png',
         sex: 'муж',
@@ -347,7 +347,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 5,
+        id: '',
         name: 'Форс Александр Ипалитович',
         photo: '../assets/userPhoto/fors.png',
         sex: 'муж',
@@ -433,7 +433,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 6,
+        id: '',
         name: 'Ахмедов Артур Ланцелотович',
         photo: '../assets/userPhoto/ahmedov.png',
         sex: 'муж',
@@ -519,7 +519,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 7,
+        id: '',
         name: 'Валиева Руфина Аидовна',
         photo: '../assets/userPhoto/valieva.png',
         sex: 'жен',
@@ -605,7 +605,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 8,
+        id:'',
         name: 'Волошина Виктория Викторовна',
         photo: '../assets/userPhoto/voloshina.png',
         sex: 'муж',
@@ -692,7 +692,7 @@ const usersData: UserDataType[] = [
         isNewSessions: false,
     },
     {
-        id: 9,
+        id: '',
         name: 'nosikov@list.ru',
         photo: '../assets/userPhoto/nosikov.png',
         sex: 'муж',

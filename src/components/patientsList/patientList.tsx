@@ -7,8 +7,8 @@ import styles from './patientsList.module.scss'
 
 type Props = {
     patients: UserDataType[];
-    currentId: number;
-    changeUserCard: (id: number) => void;
+    currentId: string;
+    changeUserCard: (id: string) => void;
 }
 
 export default function PatientList({patients, currentId, changeUserCard}: Props) {

@@ -1,15 +1,19 @@
+import { nanoid } from "nanoid";
 import { UserDataType } from "../types/userDataType";
 
  function getRandomElement(arr: UserDataType[]) {
-    const randomEl = Math.floor(Math.random() * arr.length);
-    return arr[randomEl];
+    const randomInt = Math.floor(Math.random() * arr.length);
+    return arr[randomInt];
 }
 
 function getArray(arr: UserDataType[], lengthArr: number) {
     const array: UserDataType[] = [];
 
     for (let i = 0; i < lengthArr; i++) {
-        array.push(getRandomElement(arr));
+        const element = getRandomElement(arr);
+        element.id = nanoid();
+        const clone = {...element}
+        array.push(clone);
     }
 
     return array
